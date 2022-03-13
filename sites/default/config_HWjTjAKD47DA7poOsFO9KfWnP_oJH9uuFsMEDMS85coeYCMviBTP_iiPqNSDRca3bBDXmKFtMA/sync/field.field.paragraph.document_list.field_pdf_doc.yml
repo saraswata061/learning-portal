@@ -1,0 +1,27 @@
+uuid: 69afec7a-5e61-44be-8ee7-ed01e8bf6d84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pdf_doc
+    - paragraphs.paragraphs_type.document_list
+  module:
+    - file
+id: paragraph.document_list.field_pdf_doc
+field_name: field_pdf_doc
+entity_type: paragraph
+bundle: document_list
+label: 'PDF Doc'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

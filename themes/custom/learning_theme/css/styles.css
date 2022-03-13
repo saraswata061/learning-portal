@@ -1,0 +1,13 @@
+
+.paragraph--type--document-list{
+	font-size: 1.6rem;
+	display: grid;
+	place-items: center;
+	min-height: 200px;
+	border: 8px solid;
+	padding: 1rem;
+}
+
+.paragraph--type--document-list .collapsible-field{
+  width:100%;
+}

@@ -1,0 +1,40 @@
+uuid: f179591e-bb2c-4f38-9bd0-d5ff76955fbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.learning_docs.field_course
+    - field.field.node.learning_docs.field_document_list
+    - node.type.learning_docs
+  module:
+    - entity_reference_revisions
+    - user
+id: node.learning_docs.teaser
+targetEntityType: node
+bundle: learning_docs
+mode: teaser
+content:
+  field_course:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_document_list:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,43 @@
+uuid: 075847ac-30a1-4723-b9a5-47cc017d561b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.learning_docs.field_course
+    - field.field.node.learning_docs.field_document_list
+    - node.type.learning_docs
+  module:
+    - collapsible_fields
+    - entity_reference_revisions
+    - user
+id: node.learning_docs.default
+targetEntityType: node
+bundle: learning_docs
+mode: default
+content:
+  field_course:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_document_list:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      collapsible_fields:
+        collapsible_fields_enabled: 0
+        collapsible_fields_open: 0
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

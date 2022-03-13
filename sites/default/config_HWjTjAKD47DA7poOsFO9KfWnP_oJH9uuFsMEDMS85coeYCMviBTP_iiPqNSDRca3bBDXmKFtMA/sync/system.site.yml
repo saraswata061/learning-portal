@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 4d052f7d-0430-46fa-a94f-a649a6b0c5e0
+name: 'Learning Portal'
+mail: saraswata061@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /document-list
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

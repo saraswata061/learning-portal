@@ -1,0 +1,31 @@
+uuid: 4b84f8e5-cb19-4f18-a3d8-574dadd30a06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_list
+    - node.type.learning_docs
+    - paragraphs.paragraphs_type.document_list
+  module:
+    - entity_reference_revisions
+id: node.learning_docs.field_document_list
+field_name: field_document_list
+entity_type: node
+bundle: learning_docs
+label: 'Document List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      document_list: document_list
+    negate: 0
+    target_bundles_drag_drop:
+      document_list:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions
