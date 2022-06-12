@@ -23,6 +23,7 @@
         "drupal/core-recommended": "^9.3",
         "drupal/core-vendor-hardening": "^9.3",
         "drupal/paragraphs": "^1.13",
+        "drupal/paragraphs_modal_edit": "^1.0",
         "drupal/pdf": "^1.1"
     },
     "conflict": {
